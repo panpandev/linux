@@ -13,7 +13,7 @@ Este script realiza uma reinstalação completa do servidor OpenSSH no sistema U
 
 ### Uso
 ```bash 
-curl -fsSL link | sudo bash
+curl -fsSL https://raw.githubusercontent.com/panpandev/linux/refs/heads/main/resetssh.sh | sudo bash
 ```
 ---
 
