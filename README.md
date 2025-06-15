@@ -1,2 +1,23 @@
-# linux
-script para linux
+## resetssh.sh
+Este script realiza uma reinstalação completa do servidor OpenSSH no sistema Ubuntu. Ele executa as seguintes operações:
+
+1. Atualiza o sistema operacional
+2. Remove completamente o OpenSSH e suas configurações
+3. Limpa todas as dependências relacionadas
+4. Reinstala o OpenSSH do zero
+5. Oferece a opção de:
+   - Ativar login root via SSH
+   - Configurar autenticação por senha
+   - Definir senha padrão para o usuário root
+   - senha padrão root 1234
+
+### Uso
+```bash 
+curl -fsSL link | sudo bash
+```
+---
+
+### Observações
+- O script requer privilégios de superusuário (sudo)
+- Use com cautela em ambientes de produção
+- faça backup dos arquivos em que sera editado 
