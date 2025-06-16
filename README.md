@@ -17,7 +17,25 @@ curl -fsSL https://raw.githubusercontent.com/panpandev/linux/refs/heads/main/res
 ```
 ---
 
+## monitor.sh
+
+Este script é uma ferramenta de monitoramento em tempo real para sistemas Linux. Ele fornece uma visão completa do sistema, monitorando:
+- CPU (uso, processos)
+- Memória (RAM e Swap)
+- Disco (espaço e alertas)
+- Rede (interfaces e conexões)
+- Serviços (status de SSH, Apache, MySQL, Nginx)
+- Temperatura da CPU
+- Logs do sistema
+- Usuários logados
+
+### Uso
+```bash 
+curl -fsSL https://raw.githubusercontent.com/panpandev/linux/refs/heads/main/monitor.sh | sudo bash
+```
+
 ### Observações
 - O script requer privilégios de superusuário (sudo)
 - Use com cautela em ambientes de produção
-- faça backup dos arquivos em que sera editado 
+- faça backup dos arquivos em que sera editado
+
