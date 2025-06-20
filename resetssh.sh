@@ -20,7 +20,7 @@ sleep 3
 # atualizando sistema 
 echo -e "\e[32m[*] Atualizando o sistema...\e[0m"
 sleep 2
-apt update -y && apt upgrade -y
+apt update && apt upgrade -y
 
 # parar os serviços ssh
 echo -e "\e[32m[*] Parando servicos do sistema...\e[0m"
@@ -38,7 +38,7 @@ echo -e "\e[32m[*] Deletando as pastas do Openssh...\e[0m"
 sleep 3
 sudo rm -rf /etc/ssh
 sudo rm -f /etc/init.d/ssh
-sudo rm -f /etc/init.d/sshd]
+sudo rm -f /etc/init.d/sshd
 sudo rm -f /lib/systemd/system/ssh.service
 sudo rm -f /lib/systemd/system/sshd.service
 
@@ -69,6 +69,3 @@ elif [[ $resposta =~ ^[Nn]$ ]]; then
 else
     echo "Resposta inválida. Use Y para sim ou N para não."
 fi
-
-
-
