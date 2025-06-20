@@ -53,10 +53,6 @@ echo -e "\e[32m[*] Instalando Openssh...\e[0m"
 sleep 2
 apt install openssh-server openssh-client -y
 
-# pergunta se quer modo root ativado
-
-read -p "Deseja ativar o usuario ssh root? (Y/N): " resposta
-if [[ $resposta =~ ^[Yy]$ ]]; then
     sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
     sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
     echo -e "\e[32m[*] Definindo senha root para 1234...\e[0m"
@@ -64,8 +60,3 @@ if [[ $resposta =~ ^[Yy]$ ]]; then
     echo 'root:1234' | sudo chpasswd
     sudo service ssh restart
     echo -e "\e[32m[*] Servico ssh reiniciado...\e[0m"
-elif [[ $resposta =~ ^[Nn]$ ]]; then
-    echo "Operação cancelada"
-else
-    echo "Resposta inválida. Use Y para sim ou N para não."
-fi
