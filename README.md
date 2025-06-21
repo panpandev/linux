@@ -40,7 +40,7 @@ instalação java JRE para minecraft
 
 ### Uso
 ```bash 
-curl -fsSL https://raw.githubusercontent.com/panpandev/linux/refs/heads/main/javainstall.sh| sudo bash
+curl -fsSL https://raw.githubusercontent.com/panpandev/linux/refs/heads/main/javainstall.sh | sudo bash
 ```
 
 ### Observações
