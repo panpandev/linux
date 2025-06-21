@@ -34,6 +34,15 @@ Este script é uma ferramenta de monitoramento em tempo real para sistemas Linux
 curl -fsSL https://raw.githubusercontent.com/panpandev/linux/refs/heads/main/monitor.sh | sudo bash
 ```
 
+##  javainstall.sh
+
+instalação java JRE para minecraft
+
+### Uso
+```bash 
+curl -fsSL https://raw.githubusercontent.com/panpandev/linux/refs/heads/main/javainstall.sh| sudo bash
+```
+
 ### Observações
 - O script requer privilégios de superusuário (sudo)
 - Use com cautela em ambientes de produção
